@@ -11,35 +11,50 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Discounts</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About</a></li>
-            </ul>
+            <a href="#">White Pipe</a>
         </nav>
     </header>
-<section class="header_section"><img src="soup.jpg"></section>
-
+    <section class="header_section"><img src="soup.jpg"></section>
+    <details>
+        <summary>Filters</summary>
+        <button id="veggiefilter">Veggie dishes</button>
+        <button id="alcoholfilter">Non-alcoholic dishes</button>
+    </details>
 
     <main class="productlist">
-        <section id="starter">
-        <h2>Starter</h2>
+
         <template id="productTemplate">
             <article class="product">
-            <img src="pics/pavlova-md.jpg" alt="russian tapas">
-            <section class="productbody">
-            <h3 class="data_name"> Delicious Dish</h3>
-            <p class="data_description">Russisk tapas med tomater og kød</p>
-            <h4 class="data_price"> 49,-</h4>
-            <button>See details</button>
-        </section>
-        </article>
+                <img class="product_image" src="https://kea-alt-del.dk/t5/site/imgs/small/rodbede-cabanossi-sm.jpg" alt="" />
+                <div class="icons">
+                    <img class="vegetarian hidden" src="pics/green.png">
+                    <img class="alcohol hidden" src="pics/alcohol.png">
+                </div>
+                <section class="productbody">
+                    <h3 class="data_name"> Delicious Dish</h3>
+                    <p class="data_description">Russisk tapas med tomater og kød</p>
+                    <h4 class="data_price"> 49,-</h4>
+                    <h4 class="data_discount">DISC,-</h4>
+
+                    <button>See details</button>
+                </section>
+            </article>
         </template>
-        </section>
+
 
 
     </main>
-<footer>Copyright Arina Fedosiuk</footer>
+    <footer>Copyright Arina Fedosiuk</footer>
+
+    <div class="modal-background hide">
+        <div class="modal-content">
+            <h3 class="modal-name">NAME</h3>
+            <img src="" alt="" class="modal-image" />
+            <p class="modal-description">LONG DESCRIPTION</p>
+            <h4 class="modal-price">PRICE</h4>
+            <h4 class="modal-discount">DISC</h4>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body></html>
